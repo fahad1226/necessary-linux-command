@@ -1,0 +1,40 @@
+** to activate anaconda 
+-> conda config --set auto_activate_base True
+-> source ~/.bashrc
+
+** to deactivate anaconda
+-> conda config --set auto_activate_base False 
+-> source ~/.bashrc
+
+
+** to open xampp
+-> cd /opt/lampp
+-> sudo ./managae....
+
+** to goto sound configuration
+
+-> open terminal and type 'pavucontrol'
+
+** php artisan tinker for more reactive
+-> rlwrap php artisan tinker
+
+
+** to install nodejs stable version
+
+-> sudo npm install n -g
+-> sudo n stable
+
+
+**by any chance composer is having error issues
+
+-> sudo chown -R 'fahad' /home/'fahad'/.composer
+
+
+**to set laravel globally
+
+-> export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+
+** to change the cursor size
+-> gsettings set org.gnome.desktop.interface cursor-size 20
+
