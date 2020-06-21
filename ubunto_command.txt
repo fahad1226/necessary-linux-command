@@ -38,3 +38,30 @@
 ** to change the cursor size
 -> gsettings set org.gnome.desktop.interface cursor-size 20
 
+
+
+
+
+
+** to increase swap memory
+
+-> swapon --show  (to show the current swap file size)
+-> ls -lh /swapfile ( show the swap file soze in human readbel form)
+-> sudo swapoff /swapfile (to remove the current swap memory)
+-> sudo fallocate -l 4G /swapfile (now increase the size)
+-> sudo mkswap /swapfile (set the new swap memroy)
+-> swapon --show (see the file increrases to 4GB)
+
+
+
+-> sudo dpkg-reconfigure gdm3 
+
+-> systemctl status gdm.service
+
+
+** to solve npm run serve/dev (npm watch error)
+
+-> echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+
+
